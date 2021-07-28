@@ -3,7 +3,7 @@ steps:
   entrypoint: pip
   args: ["install", "-r", "requirements.txt", "--user"]
 - name: python
-  entrypoint: pip
+  entrypoint: python
   args: ["-m", "build"]
 - name: python
   entrypoint: python
@@ -14,4 +14,3 @@ steps:
   - '--repository-url'
   - 'https://europe-west1-python.pkg.dev/lindsaysmith-convoy-playground/python-test/'
   - 'dist/*'
-  
