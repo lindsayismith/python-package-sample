@@ -12,5 +12,5 @@ steps:
   - 'twine'
   - 'upload'
   - '--repository-url'
-  - 'https://europe-west1-python.pkg.dev/lindsaysmith-convoy-playground/python-test/'
+  - 'https://us-west1-python.pkg.dev/lindsaysmith-temp-drydock-test/python-test/'
   - 'dist/*'
