@@ -1,3 +1,2 @@
 twine
 build
-keyrings.google-artifactregistry-auth

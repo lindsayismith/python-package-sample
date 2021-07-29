@@ -1,4 +1,7 @@
 steps:
+- name: gcr.io/cloud-builders/gcloud
+  entrypoint: /bin/bash
+  args: ['-c', 'echo "machine us-west1-python.pkg.dev login oauth2accesstoken password $(gcloud auth print-access-token)" > ~/.netrc']
 - name: python
   entrypoint: pip
   args: ["install", "-r", "requirements.txt", "--user"]
